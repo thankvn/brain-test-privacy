@@ -30,85 +30,175 @@
         strong { color: #333; }
         a { color: #4285F4; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .emoji { font-size: 18px; margin-right: 6px; }
-        .contact-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 24px 28px; border-radius: 12px; margin: 24px 0; }
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 24px 28px;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
         .contact-card h3 { font-size: 18px; margin-bottom: 8px; color: white; }
-        .contact-card p { color: rgba(255,255,255,0.9); margin-bottom: 4px; }
+        .contact-card p { color: rgba(255,255,255,0.95); margin-bottom: 6px; }
         .contact-card a { color: #fff; font-weight: 600; text-decoration: underline; }
-        .faq-item { background: #f8f9ff; border-left: 4px solid #667eea; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 16px 0; }
-        .faq-item .question { font-weight: 600; color: #1a1a2e; margin-bottom: 8px; font-size: 15px; }
-        .faq-item .answer { color: #555; font-size: 15px; margin: 0; }
-        .steps { counter-reset: step-counter; list-style: none; padding: 0; }
-        .steps li { counter-increment: step-counter; padding: 10px 10px 10px 48px; position: relative; background: #f8f9fa; border-radius: 8px; margin-bottom: 10px; }
-        .steps li::before { content: counter(step-counter); position: absolute; left: 12px; top: 50%; transform: translateY(-50%); background: #667eea; color: white; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
-        footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #aaa; font-size: 13px; }
-        .nav-link { display: inline-block; margin-top: 8px; color: #667eea; font-size: 14px; }
+        .faq-item {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .faq-item .question {
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .faq-item .answer {
+            color: #555;
+            font-size: 15px;
+            margin: 0;
+        }
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .steps li {
+            counter-increment: step-counter;
+            padding: 10px 10px 10px 48px;
+            position: relative;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #667eea;
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #aaa;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🧠 Brain Master: Logic &amp; Speed</h1>
-        <p class="subtitle">Support Center</p>
+<div class="container">
 
-        <div class="contact-card">
-            <h3>📧 Contact Support</h3>
-            <p>Have a question or issue? We're happy to help!</p>
-            <p>Email us at: <a href="mailto:nguyenvanthanh.cs94@gmail.com">nguyenvanthanh.cs94@gmail.com</a></p>
-            <p style="margin-top: 8px; font-size: 13px; color: rgba(255,255,255,0.75);">We typically respond within 1–2 business days.</p>
-        </div>
+<h1>Brain Master: Logic &amp; Speed</h1>
+<p class="subtitle">Support Center</p>
 
-        <h2><span class="emoji">❓</span> Frequently Asked Questions</h2>
+<div class="contact-card">
+    <h3>Contact Support</h3>
+    <p>Need help or found a bug? We're happy to assist you.</p>
+    <p>Email: <a href="mailto:nguyenvanthanh.cs94@gmail.com">nguyenvanthanh.cs94@gmail.com</a></p>
+    <p style="font-size:13px; margin-top:8px;">
+        When contacting us, please include:
+        <br>• Your device model
+        <br>• iOS version
+        <br>• App version
+    </p>
+    <p style="margin-top:8px; font-size:13px; opacity:0.85;">
+        We typically respond within 1–2 business days.
+    </p>
+</div>
 
-        <div class="faq-item">
-            <p class="question">My progress is not saving. What should I do?</p>
-            <p class="answer">Make sure you are signed in with a Google or Apple account. Guest accounts only save data locally on your device. Try signing out and back in to trigger a sync.</p>
-        </div>
+<h2>Frequently Asked Questions</h2>
 
-        <div class="faq-item">
-            <p class="question">The app is crashing or not loading correctly.</p>
-            <p class="answer">Try closing and reopening the app. If the issue persists, try uninstalling and reinstalling. Make sure your device is running iOS 15 or later. Contact us if the problem continues.</p>
-        </div>
+<div class="faq-item">
+    <p class="question">My progress is not saving. What should I do?</p>
+    <p class="answer">
+        Make sure you are signed in with your account (Apple, Google, or Email).
+        Guest progress is stored locally on your device and may be lost if the app is deleted.
+    </p>
+</div>
 
-        <div class="faq-item">
-            <p class="question">How do I turn off notifications?</p>
-            <p class="answer">Go to your device's <strong>Settings → Notifications → Brain Master</strong> and toggle off notifications. You can also manage this inside the app under <strong>Settings → Notifications</strong>.</p>
-        </div>
+<div class="faq-item">
+    <p class="question">The app is crashing or not loading correctly.</p>
+    <p class="answer">
+        Try closing and reopening the app. If the issue persists, restart your device.
+        Ensure your device is running iOS 15 or later.
+        Contact us if the problem continues.
+    </p>
+</div>
 
-        <div class="faq-item">
-            <p class="question">How do I opt out of personalized ads?</p>
-            <p class="answer">On iOS, go to <strong>Settings → Privacy &amp; Security → Tracking</strong> and disable tracking for Brain Master. You can also choose "Ask App Not to Track" when prompted by the app.</p>
-        </div>
+<div class="faq-item">
+    <p class="question">How do I turn off notifications?</p>
+    <p class="answer">
+        Go to Settings → Notifications → Brain Master and disable notifications.
+        You can also manage notifications inside the app under Settings.
+    </p>
+</div>
 
-        <div class="faq-item">
-            <p class="question">My high score is not showing on the leaderboard.</p>
-            <p class="answer">Leaderboard scores are synced to the cloud when you are signed in. Make sure you have a stable internet connection and are logged in with your account.</p>
-        </div>
+<div class="faq-item">
+    <p class="question">How do I opt out of personalized ads?</p>
+    <p class="answer">
+        On iOS, go to Settings → Privacy &amp; Security → Tracking and disable tracking for Brain Master.
+        You can also select “Ask App Not to Track” when prompted by the App Tracking Transparency dialog.
+    </p>
+</div>
 
-        <h2><span class="emoji">🗑️</span> How to Delete Your Account</h2>
-        <p>You can permanently delete your account and all associated data from within the app:</p>
-        <ol class="steps">
-            <li>Open the app and go to <strong>Settings</strong> (gear icon)</li>
-            <li>Scroll down and tap <strong>Delete Account</strong></li>
-            <li>Confirm the deletion in the dialog</li>
-        </ol>
-        <p>This will permanently remove your profile, game history, scores, and authentication data. This action cannot be undone.</p>
-        <p>Alternatively, you can request account deletion by emailing us at <a href="mailto:nguyenvanthanh.cs94@gmail.com">nguyenvanthanh.cs94@gmail.com</a>.</p>
+<div class="faq-item">
+    <p class="question">My high score is not showing on the leaderboard.</p>
+    <p class="answer">
+        Leaderboards sync when you are signed in and connected to the internet.
+        Ensure you are logged into your account and have a stable connection.
+    </p>
+</div>
 
-        <h2><span class="emoji">🔒</span> Privacy Policy</h2>
-        <p>To learn how we handle your data, please read our <a href="https://thankvn.github.io/brain-test-privacy/">Privacy Policy</a>.</p>
+<h2>How to Delete Your Account</h2>
+<p>You can permanently delete your account and all associated data directly within the app:</p>
 
-        <h2><span class="emoji">📱</span> App Information</h2>
-        <ul>
-            <li><strong>App Name:</strong> Brain Master: Logic &amp; Speed</li>
-            <li><strong>Developer:</strong> Thanh Nguyen</li>
-            <li><strong>Platform:</strong> iOS &amp; Android</li>
-            <li><strong>Support Email:</strong> <a href="mailto:nguyenvanthanh.cs94@gmail.com">nguyenvanthanh.cs94@gmail.com</a></li>
-        </ul>
+<ol class="steps">
+    <li>Open the app and go to <strong>Settings</strong></li>
+    <li>Scroll down and tap <strong>Delete Account</strong></li>
+    <li>Confirm the deletion</li>
+</ol>
 
-        <footer>
-            &copy; 2026 Brain Master: Logic &amp; Speed. All rights reserved.<br>
-            <a class="nav-link" href="https://thankvn.github.io/brain-test-privacy/">Privacy Policy</a>
-        </footer>
-    </div>
+<p>
+This action permanently removes your profile, game progress, scores, and authentication data.
+Deleted accounts cannot be restored.
+</p>
+
+<p>
+You may also request account deletion by contacting us at
+<a href="mailto:nguyenvanthanh.cs94@gmail.com">nguyenvanthanh.cs94@gmail.com</a>.
+</p>
+
+<h2>Privacy Policy</h2>
+<p>
+For information about how we collect and use data, please review our
+<a href="https://thankvn.github.io/brain-test-privacy/" target="_blank">Privacy Policy</a>.
+</p>
+
+<h2>App Information</h2>
+<ul>
+    <li><strong>App Name:</strong> Brain Master: Logic &amp; Speed</li>
+    <li><strong>Developer:</strong> Thanh Nguyen</li>
+    <li><strong>Platform:</strong> iOS</li>
+</ul>
+
+<footer>
+© 2026 Brain Master: Logic &amp; Speed<br>
+Developed and operated by Thanh Nguyen.
+</footer>
+
+</div>
 </body>
 </html>
