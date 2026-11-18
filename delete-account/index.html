@@ -51,7 +51,7 @@
 <div class="container">
 
 <h1>Delete your AhaBox account</h1>
-<p class="subtitle">App: AhaBox (Android package: com.thanhcs.fasterthinking) · Developer: Meli Labs · Last updated: November 18, 2026</p>
+<p class="subtitle">App: AhaBox (iOS and Android; Android package: com.thanhcs.fasterthinking) · Developer: Meli Labs · Last updated: November 18, 2026</p>
 
 <p>This page explains how users of <strong>AhaBox</strong>, an app developed by <strong>Meli Labs</strong>, can delete their AhaBox account and the data associated with it.</p>
 
@@ -62,17 +62,17 @@
   <li>Tap <strong>Delete Account</strong> and confirm.</li>
   <li>Sign in again with Google or Apple when asked, to confirm it is you.</li>
 </ol>
-<p>Your account and synced data are deleted immediately.</p>
+<p>Your account and synced data are deleted immediately, and all AhaBox data on the device where you delete is erased. The app returns to a signed-out state, like a fresh install.</p>
 
 <h2>Option 2: Request deletion by email</h2>
 <p>If you no longer have the app installed, email Meli Labs at <a href="mailto:nguyenvanthanh.cs94@gmail.com?subject=AhaBox%20-%20Delete%20my%20account">nguyenvanthanh.cs94@gmail.com</a> with the subject <strong>"AhaBox – Delete my account"</strong>, from the email address linked to your AhaBox account. Meli Labs will verify the request and delete your account and data within 30 days.</p>
 
 <h2>What is deleted</h2>
 <ul>
-  <li>Your AhaBox account (Firebase Authentication user: name, email, profile photo, user ID)</li>
-  <li>Synced app data: XP, streaks, game records, favorites, habit and water-tracking entries, settings</li>
-  <li>Your push notification token</li>
-  <li>Data stored on your device is cleared when you delete in the app, or when you uninstall AhaBox</li>
+  <li><strong>Your sign-in account</strong>: the Firebase Authentication user (name, email, profile photo, user ID). If you used Sign in with Apple, the app's Apple sign-in token is also revoked.</li>
+  <li><strong>Your cloud data</strong>: your user record (<code>users/{your user ID}</code>), which holds your profile (display name, email, photo), XP and level, Sparks balance and rewards, sound and haptics settings, sign-in timestamps and push notification tokens. This is all the data AhaBox syncs.</li>
+  <li><strong>Data on this device</strong>: on the device where you delete your account, all AhaBox data is erased, including XP, Sparks, streaks, game records, favorites, focus sessions, habit and water entries, reminders and settings, and all scheduled AhaBox notifications are cancelled. On other devices, local data stays until you uninstall AhaBox there.</li>
+  <li><strong>Admin summary copies</strong>: summary copies of account records used by our internal admin dashboard are removed automatically within 24 hours.</li>
 </ul>
 
 <h2>What may be kept</h2>
@@ -81,7 +81,7 @@
   <li>Information Meli Labs must keep to meet legal obligations, if any.</li>
 </ul>
 
-<p>Guest (anonymous) users have no personal account data; uninstalling AhaBox removes all data on the device.</p>
+<p>Guest (anonymous) accounts hold no name or email, only a generated nickname and progress. Uninstalling AhaBox removes all data on the device; to have a guest record removed from our servers, email us from the app's Settings → Contact.</p>
 
 <p>See also the <a href="../">AhaBox Privacy Policy</a>.</p>
 
